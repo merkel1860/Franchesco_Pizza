@@ -1,20 +1,21 @@
-package core;
+package core.view;
 
 import com.sun.org.apache.xpath.internal.operations.Or;
+import core.Order;
 import core.model.Dimesion;
 import core.model.Pizza;
 
 import java.util.Scanner;
 
 public class OrderManagement {
-    public Order makeAnOrder(){
+    public static Order makeAnOrder(){
         Pizza pizza = makePizzaChoice();
         Order anOrder = new Order();
         anOrder.getPizzaList().add(pizza);
         return anOrder;
     }
 
-    private Pizza makePizzaChoice() {
+    private static Pizza makePizzaChoice() {
         Scanner scanner = new Scanner(System.in);
         String pizza;
         String sizePizza;
