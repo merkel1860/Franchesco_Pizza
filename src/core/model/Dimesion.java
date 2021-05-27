@@ -1,4 +1,4 @@
-package core;
+package core.model;
 
 public class Dimesion {
     private String name;
@@ -13,6 +13,10 @@ public class Dimesion {
         this.name = name;
         this.weight = weight;
         this.idDimension = idDimension;
+    }
+
+    public Dimesion(String name) {
+        this.name = name;
     }
 
     public String getName() {
